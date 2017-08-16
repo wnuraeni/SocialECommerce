@@ -1,0 +1,208 @@
+body {
+    background: url("images/bg.jpg") repeat 0 0 transparent;
+	background-size:cover;
+	background-attachment:fixed;
+    border-top: 10px solid #000000;
+    display: inline-block;
+    margin: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+.container{
+	width:1170px;
+	margin:0 auto;
+}
+.logo {
+    background: none repeat scroll 0 0 #222;
+    float: left;
+    margin-top: 15px;
+    padding: 22px 30px;
+	position:relative;
+}
+.logo:before {
+    background: none repeat scroll 0 0 #222;
+    content: "";
+    height: 100%;
+    left: -100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.logo:after {
+    border-bottom:73px solid #222;
+    border-right: 140px solid transparent;
+    content: "";
+    height: 0;
+    position: absolute;
+    right: -140px;
+    top: 0;
+    width: 0;
+}
+.title {
+    background: none repeat scroll 0 0 #FD4239;
+    float: left;
+    margin-top: 25px;
+    position: relative;
+    text-align: center;
+    width: 75%;
+    z-index: -1;
+}
+.title:after {
+    border-bottom: 60px solid #FD4239;
+    border-right: 60px solid transparent;
+    content: "";
+    height: 0;
+    position: absolute;
+    right: -60px;
+    top: 0;
+    width: 0;
+}
+.title h1 {
+    color: #FFFFFF;
+    font-family: open sans;
+    font-size: 26px;
+    font-weight: 600;
+    margin: 12px 0;
+}
+.layouts {
+    float: left;
+    margin-top: 180px;
+    width: 100%;
+}
+.box:last-child {
+    margin-right: 0;
+}
+.box {
+    float: left;
+    margin-right: 20px;
+    width: 376px;
+	position:relative;
+}
+.box h2 {
+    color: #353535;
+    display: table;
+    font-family: open sans;
+    font-weight: 600;
+    line-height: 66px;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0 20px;
+    position: relative;
+    text-align: center;
+	
+    -webkit-transition: all 0.6s ease 0s;
+    -moz-transition: all 0.6s ease 0s;
+    -ms-transition: all 0.6s ease 0s;
+    -o-transition: all 0.6s ease 0s;
+    transition: all 0.6s ease 0s;
+}
+.box h2:after {
+    height: 65px;
+    width: 0;
+    background: none repeat scroll 0 0 #FD4239;
+    content: "";
+    z-index: -1;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    -webkit-transition: all 0.6s ease 0s;
+    -moz-transition: all 0.6s ease 0s;
+    -ms-transition: all 0.6s ease 0s;
+    -o-transition: all 0.6s ease 0s;
+    transition: all 0.6s ease 0s;
+}
+.box h2:hover:after {
+    width: 100%;
+}
+.box h2 a {
+    color: #353535;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.box h2:hover a, .box h2:hover a span {
+    color: #FFFFFF;
+}
+.blue {
+    color: #01ABF1;
+}
+.red {
+    color: #FD0202;
+}
+.yellow {
+    color: #FFA13A;
+}
+.dummy {
+    float: left;
+    height: 206px;
+    position: relative;
+    width: 100%;
+}
+
+
+.screen {
+    background: url("images/screen.png") repeat scroll 0 0 transparent;
+    float: left;
+    height: 225px;
+    margin-top: -27px;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+.demo {
+    float: left;
+    height: 163px;
+    width: 262px;
+    position: absolute;
+    top: 17px;
+    left: 61px;
+
+    -webkit-transition: all 5s ease 0s;
+    -moz-transition: all 5s ease 0s;
+    -ms-transition: all 5s ease 0s;
+    -o-transition: all 5s ease 0s;
+    transition: all 5s ease 0s;
+}
+.shot1{
+    background: url("images/PhotoShare(1.html).png") repeat scroll 0 0 / 100% auto transparent;
+	background-size:cover;
+}
+.shot2{
+    background: url("images/PhotoShare(3.html).png") repeat scroll 0 0 / 100% auto transparent;
+	background-size:cover;
+}
+.shot3{
+    background: url("images/PhotoShare(2.html).png") repeat scroll 0 0 / 100% auto transparent;
+	background-size:cover;
+}
+
+.box ul {
+    color: #353535;
+    font-family: open sans;
+    font-size: 13px;
+    font-weight: 600;
+    list-style: none outside none;
+    margin: 0;
+    padding: 30px 20px;
+	float:left;
+	width:100%;
+	
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.box li:before {
+    background: none repeat scroll 0 0 #353535;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: 8px;
+    width: 6px;
+}
+.box li {
+    padding-left: 14px;
+    position: relative;
+}

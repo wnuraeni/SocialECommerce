@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search Page</title>
+
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Raleway:100,900,800,700,600,500,400,300,200' rel='stylesheet' type='text/css'><!-- Google Fonts -->
+
+<!-- Styles -->
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" /><!-- Bootstrap -->
+<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" /><!-- Custom Scroll Bar -->
+<link rel="stylesheet" href="font-awesome/css/font-awesome.css" type="text/css" /><!-- Font Awesome -->
+<link rel="stylesheet" href="css/style.css" type="text/css" /><!-- Style -->
+<link rel="stylesheet" href="css/responsive.css" type="text/css" /><!-- Responsive Style -->
+
+<!-- Script -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><!-- Jquery -->
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script><!-- Scroll Bar -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script><!-- Circle Chart -->
+<script type="text/javascript"  src="js/bootstrap.js"></script><!-- Bootstrap -->
+<script type="text/javascript"  src="js/script.js"></script><!-- Script -->
+<script src="js/jquery.flot.min.js"></script><!-- Chart -->
+<script src="js/side-navigation-tag.js"></script>
+<script type="text/javascript" src="js/jquery.sparkline.min.js"></script> <!-- Sparkline -->
+<script src="js/jquery-ui.custom.min.js"></script> <!-- Jquery UI Custom -->
+<script src="js/jquery.easypiechart.min.js"></script> <!-- Easy Pie Chart -->
+<script type="text/javascript" src="http://xoxco.com/projects/code/tagsinput/jquery.tagsinput.js"></script><!-- Sidebar Add Tag -->
+
+
+
+
+<!-- Sparklines -->
+<script type="text/javascript">
+	$(function() {
+	$("#new-orders").sparkline([4,5,6,7,6,5,4,3,2,2,3,4], {
+    type: 'bar',
+    height: '40px',
+	barSpacing:3,
+    barWidth: 6,
+    barColor: '#ff4646',
+    negBarColor: '#D6A838'});
+    });
+	
+	$(function() {
+	$("#my-balance").sparkline([4,5,6,7,6,5,4,3,2,2,3,4], {
+    type: 'bar',
+    height: '40px',
+	barSpacing:3,
+    barWidth: 6,
+    barColor: '#21b95e',
+    negBarColor: '#27A9E3'});
+    });
+</script>
+
+</head>
+<body>
+<div class="wrapper">
+	<header>
+		<div class="logo">
+			<img src="images/logo.png" alt="" />
+		</div><!-- Logo -->
+		<div class="welcome-user">
+			<img src="images/user.png" alt=""/>
+			<span>LARA SMITH</span>
+			<p>Welcome Lara Smith</p>
+		</div>
+			<div class="side-navigation">
+				<ul>
+					<li><a href="dashboard.html" title=""><i class="icon-laptop"></i>Dashboard</a></li>
+					<li><a href="hosting-dashboard.html" title=""><i class="icon-laptop"></i>Hosting Dashboard</a></li>
+					<li><a href="sale-purchase-dashboard.html" title=""><i class="icon-laptop"></i>For Sale & Purchase</a></li>
+					<li><a title=""><i class="icon-cogs"></i>Components<span>13</span></a>
+						<ul>
+							<li><a href="charts.html" title=""><i class="icon-angle-right"></i>Charts</a></li>
+							<li><a href="notification.html" title=""><i class="icon-angle-right"></i>Notifications</a></li>
+							<li><a href="grids.html" title=""><i class="icon-angle-right"></i>Grids</a></li>
+							<li><a href="ribbon-grids.html" title=""><i class="icon-angle-right"></i>Ribbon Grids</a></li>
+							<li><a href="buttons.html" title=""><i class="icon-angle-right"></i>Buttons</a></li>
+							<li><a href="calendars.html" title=""><i class="icon-angle-right"></i>Calendars</a></li>
+							<li><a href="progressbar.html" title=""><i class="icon-angle-right"></i>Progress Bar</a></li>
+							<li><a href="file-manager.html" title=""><i class="icon-angle-right"></i>File Manager</a></li>
+							<li><a href="gallery.html" title=""><i class="icon-angle-right"></i>Gallery</a></li>
+							<li><a href="slider.html" title=""><i class="icon-angle-right"></i>Slider</a></li>
+							<li><a href="dashboard.html" title=""><i class="icon-angle-right"></i>Page Tour</a></li>
+							<li><a href="collapse.html" title=""><i class="icon-angle-right"></i>Collapse</a></li>
+							<li><a href="range-slider.html" title=""><i class="icon-angle-right"></i>Range Slider</a></li>
+						</ul>
+					</li>
+					<li><a href="form.html" title=""><i class="icon-pencil"></i>Form Elements</a></li>
+					<li><a href="icon.html" title=""><i class="icon-tint"></i>Icons</a></li>
+					<li><a href="tables.html" title=""><i class="icon-list-alt"></i>Tables</a></li>
+					<li><a href="typography.html" title=""><i class="icon-font"></i>Typography</a></li>
+					<li><a title=""><i class="icon-rocket"></i>Sample Pages<span>4</span></a>
+						<ul>
+							<li><a href="invoice.html" title=""><i class="icon-angle-right"></i>Invoice</a></li>
+							<li><a href="index.html" title=""><i class="icon-angle-right"></i>Log in</a></li>
+							<li><a href="404.html" title=""><i class="icon-angle-right"></i>404 Error Page</a></li>
+							<li><a href="blank-page.html" title=""><i class="icon-angle-right"></i>Blank Page</a></li>
+						</ul>
+					</li>
+					<li><a title=""><i class="icon-ellipsis-horizontal"></i>Bonus Free<span>5</span></a>
+						<ul>
+							<li><a href="price-table.html" title=""><i class="icon-angle-right"></i>Pricing Table</a></li>
+							<li><a href="search.html" title=""><i class="icon-angle-right"></i>Search Result</a></li>
+							<li><a href="inbox.html" title=""><i class="icon-angle-right"></i>Message</a></li>
+							<li><a href="profile.html" title=""><i class="icon-angle-right"></i>Profile</a></li>
+							<li><a href="faq.html" title=""><i class="icon-angle-right"></i>FAQ</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		<div class="social-statistics">
+			<h4 class="headings"><i class="icon-twitter"></i>Social Statistics</h4>
+				<div class="social-details">
+					<img src="images/fb.jpg" alt="" />
+					<span>530,893</span>
+					<p>Total Facebook Likes</p>
+				</div>
+				
+				<div class="social-details">
+					<img src="images/twitter.jpg" alt="" />
+					<span>17,812</span>
+					<p>Total Twitter Tweets</p>
+				</div>
+				
+				<div class="social-details">
+					<img src="images/rss.jpg" alt="" />
+					<span>2,159</span>
+					<p>Total Rss</p>
+				</div>
+		</div>
+		
+		
+		<div class="new-files">
+			<h4 class="headings"><i class="icon-envelope"></i> Your Emails</h4>
+			<ul>
+				<li>
+					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+					<a title="" href="#"><i class="icon-envelope blue"></i>From : David Smith</a>
+					<p>Dear Victoria, Congratulations! You work has been uploaded so please....</p>
+				</li>
+				<li>
+					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+					<a title="" href="#"><img src="images/email-thumb.png" alt="" />Re : John Doe</a>
+					<p>Dear Haxzer, What's Your Plan! You work has been uploaded so please....</p>
+				</li>
+				<li>
+					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+					<a title="" href="#"><i class="icon-envelope green"></i>Re : Parker</a>
+					<p>Dear Haxzer, What's Your Plan! You work has been uploaded so please....</p>
+				</li>
+			
+			</ul>
+		</div>
+		<div class="tag-sec">
+			<input id="tags_1" type="text" class="tags" value="Here,you,can,add,tags" />
+		</div>
+		
+		<a class="slide-up-btn"><i class="icon-align-justify"></i></a>
+	</header><!-- Header End -->
+	
+
+<section class="main-section">
+		<div class="responsive-logo">
+			<img src="images/logo.png" alt="" />
+		</div>
+			<div class="responsive-menu">
+			<div class="responsive-menu-dropdown">
+				<a title="" class="red">MENU <i class="icon-align-justify" ></i></a>
+			</div>
+				<ul>
+					<li><a href="dashboard.html" title=""><i class="icon-laptop"></i>Dashboard</a></li>
+					<li><a href="hosting-dashboard.html" title=""><i class="icon-laptop"></i>Hosting Dashboard</a></li>
+					<li><a href="sale-purchase-dashboard.html" title=""><i class="icon-laptop"></i>For Sale & Purchase</a></li>
+					<li><a title=""><i class="icon-cogs"></i>Components<span>13</span></a>
+						<ul>
+							<li><a href="charts.html" title=""><i class="icon-angle-right"></i>Charts</a></li>
+							<li><a href="notification.html" title=""><i class="icon-angle-right"></i>Notifications</a></li>
+							<li><a href="grids.html" title=""><i class="icon-angle-right"></i>Grids</a></li>
+							<li><a href="ribbon-grids.html" title=""><i class="icon-angle-right"></i>Ribbon Grids</a></li>
+							<li><a href="buttons.html" title=""><i class="icon-angle-right"></i>Buttons</a></li>
+							<li><a href="calendars.html" title=""><i class="icon-angle-right"></i>Calendars</a></li>
+							<li><a href="progressbar.html" title=""><i class="icon-angle-right"></i>Progress Bar</a></li>
+							<li><a href="file-manager.html" title=""><i class="icon-angle-right"></i>File Manager</a></li>
+							<li><a href="gallery.html" title=""><i class="icon-angle-right"></i>Gallery</a></li>
+							<li><a href="slider.html" title=""><i class="icon-angle-right"></i>Slider</a></li>
+							<li><a href="dashboard.html" title=""><i class="icon-angle-right"></i>Page Tour</a></li>
+							<li><a href="collapse.html" title=""><i class="icon-angle-right"></i>Collapse</a></li>
+							<li><a href="range-slider.html" title=""><i class="icon-angle-right"></i>Range Slider</a></li>
+						</ul>
+					</li>
+					<li><a href="form.html" title=""><i class="icon-pencil"></i>Form Elements</a></li>
+				</ul>
+				<ul>
+					<li><a href="icon.html" title=""><i class="icon-tint"></i>Icons</a></li>
+					<li><a href="tables.html" title=""><i class="icon-list-alt"></i>Tables</a></li>
+					<li><a href="typography.html" title=""><i class="icon-font"></i>Typography</a></li>
+					<li><a title=""><i class="icon-rocket"></i>Sample Pages<span>4</span></a>
+						<ul>
+							<li><a href="invoice.html" title=""><i class="icon-angle-right"></i>Invoice</a></li>
+							<li><a href="index.html" title=""><i class="icon-angle-right"></i>Log in</a></li>
+							<li><a href="404.html" title=""><i class="icon-angle-right"></i>404 Error Page</a></li>
+							<li><a href="blank-page.html" title=""><i class="icon-angle-right"></i>Blank Page</a></li>
+						</ul>
+					</li>
+					<li><a title=""><i class="icon-ellipsis-horizontal"></i>Bonus Free<span>5</span></a>
+						<ul>
+							<li><a href="price-table.html" title=""><i class="icon-angle-right"></i>Pricing Table</a></li>
+							<li><a href="search.html" title=""><i class="icon-angle-right"></i>Search Result</a></li>
+							<li><a href="inbox.html" title=""><i class="icon-angle-right"></i>Message</a></li>
+							<li><a href="profile.html" title=""><i class="icon-angle-right"></i>Profile</a></li>
+							<li><a href="faq.html" title=""><i class="icon-angle-right"></i>FAQ</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+<div class="container">
+	<div class="row">
+		<div class="main-bg">
+			<div class="top-stats">
+				<input type="text" placeholder="Your Search Here" /><i class="icon-search"></i>
+				<div class="top-bar-chart">
+					<div class="bar-chart-details">
+						<p>New User</p>
+						<h5>17,561</h5>
+					</div>
+					<span id="new-orders" class="sparkline">4,5,6,7,6,5,4,3,2,2,4</span>
+				</div>
+				
+				<div class="top-bar-chart">
+					<div class="bar-chart-details">
+						<p>My Balance</p>
+						<h5>$21,561.01</h5>
+					</div>
+					<span id="my-balance" class="sparkline">4,5,6,7,6,5,4,3,2,2,4</span>
+				</div>
+				<div class="top-stats-icons">
+					<i class="icon-rocket"></i><i class="icon-user"></i><i class="icon-laptop"></i><i class="icon-tasks"></i>
+				</div>
+			</div>
+			
+			<div class="breadcrumbs-notify">
+				<a href="#" title="">Home / </a> <a href="#" class="current-page" title=""> Blank Page </a>
+				<div class="notification-auto">
+					<div class="fade-notification">
+					<h5><i class="icon-warning-sign"></i> Notification :</h5>
+					</div>
+					<div class="notification-slideshow">
+						<h6 class="notify-fade">Server 3 is Over Loader Please Check. <i>3:45pm</i></h6>
+						<h6 class="notify-fade">Server # 10 is Not Responding<i>1:30 Am</i></h6>
+						<h6 class="notify-fade">New User Registration Error . <i>Today</i></h6>
+						<h6 class="notify-fade">Domain Expiration Error <i>Yesterday</i></h6>
+						<h6 class="notify-fade">Database Over loaded 2% Remaining <i>9:59 pm</i></h6>
+						<h6 class="notify-fade">Application Erro Delete it Now <i>Last Week</i></h6>
+					</div>
+				</div>
+			</div>
+			
+			<div class="heading-buttons-sec">
+				<h1>Search Result</h1>
+				<p>Good Morning Lara Smith!!</p>
+					<div class="heading-buttons">
+						<ul>
+						<li class="dropdown heading-dropdown">
+							<a href="#" data-toggle="dropdown" role="button" id="drop1">Dropdown <b class="caret"></b></a>
+							<ul aria-labelledby="drop1" role="menu" class="dropdown-menu" id="menu1">
+							<li role="presentation"><a href="#" tabindex="-1" role="menuitem">Action</a></li>
+							<li role="presentation"><a href="#" tabindex="-1" role="menuitem">Another action</a></li>
+							<li role="presentation"><a href="#" tabindex="-1" role="menuitem">Something else here</a></li>
+							<li class="divider" role="presentation"></li>
+							<li role="presentation"><a href="#" tabindex="-1" role="menuitem">Separated link</a></li>
+							</ul>
+						</li>
+						</ul>
+						<a href="#" title=""><i class="icon-paper-clip"></i></a><a href="#" title=""><i class="icon-calendar"></i></a><a href="#" title=""><i class="icon-envelope"></i></a><a href="#" title=""><i class="icon-refresh"></i></a>
+					</div>
+			</div>
+			
+			
+		<div class="body-sec">
+			<div class="col-md-12">
+				<div class="searc-result">
+					<div>
+						<div class="search-box result" style="width:100%; padding-left:0;">
+							<input type="text" placeholder="Search Here">
+						</div>
+						<strong>Result From</strong><a class="green" title="" href="#">YourSite.com</a>
+					</div>
+					<div class="search-heading">
+						<p>your Search for <strong>Calendars</strong> Returned the following result</p>
+					</div>
+					<div class="result-page">
+						<p>Showing 1-20 of 25 Results</p>
+						<div class="search-next">
+							<a title="" href="#">Next Result<i class="icon-long-arrow-right"></i></a>
+						</div>
+					</div>
+					<ul>
+						<li><div class="search-thumb"><img alt="" src="images/chat-user1.jpg"></div><div class="search-details"><h3>Calendar Design: Best Practices and Design Calendar Code ...</h3>
+						<p><span class="search-date">Sep 30, 2012 </span> Search Results Page Design helps the user to narrow down the search results in a specific category. It not only sells out the products but ...</p>
+						</div>
+						</li>
+						<li><div class="search-thumb"><img alt="" src="images/chat-user1.jpg"></div><div class="search-details"><h3>Calendar Design: Best Practices and Design Calendar Code ...</h3>
+						<p><span class="search-date">Sep 30, 2012 </span> Search Results Page Design helps the user to narrow down the search results in a specific category. It not only sells out the products but ...</p>
+						</div>
+						</li>
+						<li><div class="search-thumb"><img alt="" src="images/chat-user1.jpg"></div><div class="search-details"><h3>Calendar Design: Best Practices and Design Calendar Code ...</h3>
+						<p><span class="search-date">Sep 30, 2012 </span> Search Results Page Design helps the user to narrow down the search results in a specific category. It not only sells out the products but ...</p>
+						</div>
+						</li>										
+					
+					</ul>
+				</div>
+			</div>	
+
+			
+		</div><!-- Body Sec -->
+		</div><!-- main-bg-->
+	</div><!-- Row -->
+</div><!-- Container -->
+	
+</section><!-- Main Section -->
+	
+</div><!-- Wrapper -->
+</body><!-- Body -->
+</html><!-- Html -->
